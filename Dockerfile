@@ -1,4 +1,4 @@
-FROM rocker/geospatial:latest
+FROM rocker/binder:latest
 
 RUN apt-get update && apt-get -y install cron
 RUN apt-get update && apt-get -y install jags
