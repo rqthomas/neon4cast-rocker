@@ -1,16 +1,16 @@
-FROM rocker/binder
+FROM rocker/geospatial
 
 ## Declares build arguments
-ARG NB_USER
-ARG NB_UID
+#ARG NB_USER
+#ARG NB_UID
 
-COPY --chown=${NB_USER} . ${HOME}
+#COPY --chown=${NB_USER} . ${HOME}
 
-USER root
+#USER root
 RUN apt-get update && apt-get -y install cron
 RUN apt-get update && apt-get -y install jags
 
-USER ${NB_USER}
+#USER ${NB_USER}
 
 RUN install2.r renv remotes rjags neonstore ISOweek RNetCDF devtools fable fabletools forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2
 
