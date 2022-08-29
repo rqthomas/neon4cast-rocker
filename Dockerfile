@@ -1,4 +1,4 @@
-FROM rocker/binder:latest
+FROM rocker/binder
 
 RUN apt-get update && apt-get -y install cron
 RUN apt-get update && apt-get -y install jags
