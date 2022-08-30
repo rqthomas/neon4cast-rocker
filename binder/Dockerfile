@@ -1,4 +1,4 @@
-FROM rocker/binder
+FROM rocker/geospatial:dev-osgeo
 
 ## Declares build arguments
 ARG NB_USER
