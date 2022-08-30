@@ -28,5 +28,5 @@ jobs:
         with:
           push: true
           tags: eco4cast/rocker-binder:latest
-          context: ./binder
+          context: "{{defaultContext}}:binder"
           
