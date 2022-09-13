@@ -9,7 +9,7 @@ COPY --chown=${NB_USER} . ${HOME}
 USER root
 RUN apt-get update && apt-get -y install cron
 RUN apt-get update && apt-get -y install jags
-RUN apt-get update && apt-get -y libgd-dev
+RUN apt-get update && apt-get -y install libgd-dev
 
 USER ${NB_USER}
 
