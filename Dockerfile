@@ -1,5 +1,5 @@
-#FROM rocker/geospatial:dev-osgeo
-FROM rocker/geospatial:latest
+FROM rocker/geospatial:dev-osgeo
+#FROM rocker/geospatial:latest
 
 ## Declares build arguments
 #ARG NB_USER
