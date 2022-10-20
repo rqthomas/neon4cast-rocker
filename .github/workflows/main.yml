@@ -23,11 +23,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: eco4cast/rocker-neon4cast:latest
-      - name: Build and push 2
-        uses: docker/build-push-action@v3
-        with:
-          push: true
-          tags: eco4cast/rocker-binder:latest
-          context: "{{defaultContext}}:binder"
+          tags: eco4cast/rocker-neon4cast:dev-osgeo
           
