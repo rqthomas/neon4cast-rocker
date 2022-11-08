@@ -23,5 +23,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: eco4cast/rocker-neon4cast:dev-osgeo
+          tags: eco4cast/rocker-neon4cast:4.2.1
           
