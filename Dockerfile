@@ -1,4 +1,4 @@
-FROM rocker/geospatial:dev-osgeo
+FROM rocker/geospatial:4.2.1
 #FROM rocker/geospatial:latest
 
 ## Declares build arguments
